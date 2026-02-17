@@ -1,0 +1,58 @@
+:root{
+    --primary-bg-color: #161616;
+    --primary-color: #e5e5e5;
+    --secondary-bg-color: #202020;
+    --marginSize: 25rem;
+}
+
+@font-face {
+    font-family: 'JetBrains'; 
+    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains-Bold'; 
+    src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    font-family: 'JetBrains', monospace;
+}
+
+footer {
+    padding-top: 2rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-bg-color);
+    padding-bottom: 2rem;
+  }
+
+h1{
+    font-family: JetBrains-Bold;
+}
+
+body{
+    margin: 0;
+}
+
+.marg{
+    margin:0 var(--marginSize);
+}
+
+.highlight{
+    color: #c541be;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.nav-link:hover {
+    color: #c541be;
+}
