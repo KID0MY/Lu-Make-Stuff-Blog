@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+const pageTitle = "hello, world!";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1 class="me">Hi, I'm <span class="highlight">Lu!</span></h1>
+			<p>(a.k.a big camera nerd)</p>
+			<section>
+				<p>
+					This blog is where I share my silly adventures! I like computers, trains, photograpy, 3D Printers, graphic design and baking from time to time.
+				</p>
+			</section>
+			<nav>
+				<h2><a href="/posts/" class="nav-link">My Blog Posts -&gt;</a></h2>
+				<p>This is some stuff I wrote and am proud of :D</p>
+				<ul>
+					<a href="/posts/" class="nav-link">>> Chicken jockey</a>
+				</ul>
+			</nav>
+		</main>
+		<Footer/>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+:root {
+    --primary-bg-color: #161616;
+    --primary-color: #e5e5e5;
+    --secondary-bg-color: #202020;
+    --marginSize: 25rem;
+}
+
+@font-face {
+    font-family: 'JetBrains';
+    src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains-Bold';
+    src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darumadrop One';
+    src: url('/fonts/DarumadropOne-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSerif';
+    src: url('/fonts/NotoSerif-VariableFont_wdth,wght.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    font-family: 'JetBrains', monospace;
+    line-height: 1.75;
+}
+
+main {
+    max-width: 1000px;
+    /* Keeps the text from getting too wide/unreadable */
+    margin: 0 auto;
+    /* Centers the container horizontally */
+    padding: 0px 20px;
+    /* 40px top/bottom, 20px left/right for mobile spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    main {
+        padding: 20px 15px;
+        /* Tighter padding on small screens */
+    }
+}
+
+/* styling links like the site you shared */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline #c541be 3px;
+}
+
+ul {
+    list-style-type: none;
+    /* Removes bullet points for that clean look */
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Darumadrop One', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+h1.me {
+    font-size: 96px;
+}
+
+
+.highlight {
+
+    color: #c541be;
+}
+
+footer {
+    color: var(--primary-color);
+    background-color: var(--secondary-bg-color);
+    padding: 24px 8px;
+}
+
+/*
+.fancy-link{
+    background-color: #352533;
+    color: #c541be;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: -.2em 0;
+    padding: .08em .3em .16em;
+    text-decoration: none;
+    transition: color .1s,background-color .1s
+}
+
+.fancy-link:hover{
+  background-color: rgb(33, 28, 32);
+  color: #c541be;
+}
+*/
