@@ -1,0 +1,77 @@
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    background-image:
+        linear-gradient(90deg, var(--secondary-bg-color) 2px, transparent 1px),
+        linear-gradient(180deg, var(--secondary-bg-color) 2px, transparent 1px);
+    background-size: 30px 30px;
+    /* Adjust grid size */
+}
+
+.centered {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.inline-heading {
+    display: inline-block;
+}
+
+.pisca {
+    animation-name: blinkingLine;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinkingLine {
+    0% {
+        color:var(--primary-color);
+    }
+
+    25% {
+        color: #00000000;
+    }
+
+    50% {
+        color: var(--primary-color);
+    }
+
+    70% {
+        color: #00000000;
+    }
+
+    100% {
+        color: var(--primary-color);
+    }
+
+}
+
+.AboutMe {
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border:medium solid var(--secondary-bg-color);
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 0px 40px 20px rgb(16, 16, 16);
+}
+
+.AboutMe p{
+    margin-left:3%;
+    margin-right:3%;
+}
+
+.AboutMe h2{
+    margin-left:3%;
+    margin-right:3%;
+}
+
+.nav-link-Big{
+    margin-left:0%;
+    margin-right:3%;
+}
+
+.nav-link{
+    margin-left:3%;
+    margin-right:3%;
+}
