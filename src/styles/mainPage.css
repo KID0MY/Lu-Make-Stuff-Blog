@@ -1,13 +1,3 @@
-body {
-    background-color: var(--primary-bg-color);
-    color: var(--primary-color);
-    background-image:
-        linear-gradient(90deg, var(--secondary-bg-color) 2px, transparent 1px),
-        linear-gradient(180deg, var(--secondary-bg-color) 2px, transparent 1px);
-    background-size: 30px 30px;
-    /* Adjust grid size */
-}
-
 .centered {
     padding-top: 5%;
     text-align: center;
