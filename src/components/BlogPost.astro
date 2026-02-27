@@ -1,10 +1,16 @@
 ---
 const { title, url, pubDate } = Astro.props;
+
+const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
 ---
 
 <div>
     <a href={url}>
         <h2 class="reveal-link">{title}</h2>
-        <i class="date">Published {pubDate}</i>
+        <i class="date">Published {formattedDate}</i>
     </a>
 </div>
