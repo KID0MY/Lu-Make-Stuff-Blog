@@ -3,6 +3,9 @@
     --primary-color: #e5e5e5;
     --secondary-bg-color: #202020;
     --marginSize: 25rem;
+
+    --highlight-color:#D42A63;
+    --highlight-color-dark:#881B3F;
 }
 
 @font-face {
@@ -66,13 +69,13 @@ main {
 
 a:not([class]) {
     text-decoration: none;
-    background-color: #ae3f5c;
+    background-color: var(--highlight-color);
     color: var(--primary-bg-color);
     transition: all 0.4s ease;
 }
 
 a:not([class]):hover {
-    background-color: #733445;
+    background-color: var(--highlight-color-dark);
     color: white;
 }
 
@@ -81,9 +84,12 @@ a:not([class]) i {
     background-color: var(--primary-bg-color);
     display: inline-block;
 }
+
 .badges{
 text-decoration: none;
+image-rendering: pixelated;
 }
+
 li {
     margin-left: 6%;
 }
@@ -130,7 +136,7 @@ footer {
 .reveal-link, .box-link {
     margin-bottom: 10px;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease;
 }
 
 .reveal-link {
@@ -140,7 +146,7 @@ footer {
 }
 
 .reveal-link:hover {
-    border-color: #FF5582;
+    border-color: var(--highlight-color);
     background-color: rgba(255, 85, 130, 0.05); 
 }
 
@@ -148,11 +154,11 @@ footer {
 .box-link {
     border-radius: 3px 3px;
     padding: 2px 2px;
-    background-color: #ae3f5c; 
+    background-color: var(--highlight-color); 
     color: var(--primary-bg-color);
 }
 
 .box-link:hover {
-    background-color: #733445;
+    background-color: var(--highlight-color-dark);
     color: var(--primary-color);
 }

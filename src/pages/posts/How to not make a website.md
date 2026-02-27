@@ -1,7 +1,7 @@
 ---
 
 layout: ../../layouts/BaseMarkdown.astro
-title: How to Not make a webiste
+title: How to Not make a website
 author: LuIsAGeek
 description: A bad guide on how to build a website
 pubDate: 2026-03-02

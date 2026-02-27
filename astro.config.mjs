@@ -1,7 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lumakestuff.dev', // Replace with your domain
+  // Replace with your domain
+  site: 'https://lumakestuff.dev',
+
+  adapter: cloudflare()
 });
