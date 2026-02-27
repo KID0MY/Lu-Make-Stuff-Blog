@@ -42,7 +42,6 @@ body {
         linear-gradient(90deg, var(--secondary-bg-color) 2px, transparent 1px),
         linear-gradient(180deg, var(--secondary-bg-color) 2px, transparent 1px);
     background-size: 30px 30px;
-    /* Adjust grid size */
 }
 
 
@@ -55,23 +54,16 @@ html {
 
 main {
     max-width: 1000px;
-    /* Keeps the text from getting too wide/unreadable */
     margin: 0 auto;
-    /* Centers the container horizontally */
     padding: 0px 20px;
-    /* 40px top/bottom, 20px left/right for mobile spacing */
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     main {
         padding: 20px 15px;
-        /* Tighter padding on small screens */
     }
 }
 
-/* --- TYPE 1: The Default Highlighter (Text links) --- */
-/* This will apply to links that DON'T have a special class */
 a:not([class]) {
     text-decoration: none;
     background-color: #ae3f5c;
@@ -84,17 +76,15 @@ a:not([class]):hover {
     color: white;
 }
 
-/* This is the fix: It removes the highlight specifically from the <i> */
 a:not([class]) i {
     color: var(--primary-color);
-    background-color: var(--primary-bg-color); /* Matches your dark grid background */
+    background-color: var(--primary-bg-color);
     display: inline-block;
 }
 .badges{
 text-decoration: none;
 }
 li {
-    /* Removes bullet points for that clean look */
     margin-left: 6%;
 }
 
@@ -137,35 +127,32 @@ footer {
     font-family: 'NotoSerif', serif;
 }
 
-/* General style for both links to make them look like the site */
 .reveal-link, .box-link {
     margin-bottom: 10px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 
-/* --- TYPE 1: Invisible Reveal --- */
 .reveal-link {
-    /* Make text same color as background or very light */
     color: rgb(255, 255, 255);
     padding: 5px;
-    border: 1px dashed #cccccc00; /* Shows a "placeholder" border */
+    border: 1px dashed #cccccc00; 
 }
 
 .reveal-link:hover {
     border-color: #FF5582;
-    background-color: rgba(255, 85, 130, 0.05); /* Very light tint */
+    background-color: rgba(255, 85, 130, 0.05); 
 }
 
-/* --- TYPE 2: Constant Box (Dimming) --- */
+
 .box-link {
     border-radius: 3px 3px;
     padding: 2px 2px;
-    background-color: #ae3f5c; /* Your highlight color */
+    background-color: #ae3f5c; 
     color: var(--primary-bg-color);
 }
 
 .box-link:hover {
-    background-color: #733445; /* Dims/Darkens on hover */
+    background-color: #733445;
     color: var(--primary-color);
 }
