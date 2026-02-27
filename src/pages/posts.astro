@@ -1,10 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
-const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true }),);
+const allPosts = Object.values(
+  import.meta.glob("./posts/*.md", { eager: true }),
+);
 const pageName = "Posts";
 ---
 
 <BaseLayout pageTitle={pageName}>
-  {allPosts.map((post: any) => (<BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} />))}
+  {
+    allPosts.map((post: any) => (
+      <BlogPost
+        url={post.url}
+        title={post.frontmatter.title}
+        pubDate={post.frontmatter.pubDate}
+      />
+    ))
+  }
 </BaseLayout>

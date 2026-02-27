@@ -13,11 +13,9 @@ const { frontmatter } = Astro.props;
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>{frontmatter.title}</title>
-    </head>
     <body>
         <main>
-            <Header title={frontmatter.title} /> 
-            
+            <Header title={frontmatter.title} />
             <div class="Box-MD">
                 <h1>{frontmatter.title}</h1>
                 <h4>{frontmatter.pubDate}</h4>

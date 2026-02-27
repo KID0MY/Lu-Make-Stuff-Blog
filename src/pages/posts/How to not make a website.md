@@ -3,7 +3,7 @@ layout: ../../layouts/BaseMarkdown.astro
 title: How to Not make a webiste
 author: LuIsAGeek
 description: A bad guide on how to build a website
-pubDate: 22-02-2026
+pubDate: Sunday, February 22th, 2026
 tags:
   - website
   - not-a-tutorial
