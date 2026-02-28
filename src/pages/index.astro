@@ -3,6 +3,7 @@ const pageTitle = "Hi, I'm Lu :)";
 import "../styles/mainPage.css";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
+import { Image } from 'astro:assets'
 ---
 
 <!doctype html>
@@ -54,8 +55,8 @@ import Footer from "../components/Footer.astro";
                 </nav>
                 <h2>Cool things :D</h2>
                 <nav>
-                    <a href=https://www.youtube.com/watch?v=OF_5EKNX0Eg class="badges"><img src="/src/88x31/xenia.gif" alt="Powered by linx"></a>
-                    <img src="/src/88x31/queerpride.gif" alt="queer pride!">
+                    <a href=https://www.youtube.com/watch?v=OF_5EKNX0Eg class="badges"><Image src={import("/src/images/xenia.gif")} alt="Powered by linx"></a>
+                    <Image src={import("/src/images/queerpride.gif")} alt="queer pride!">
                 </nav>
             </div>
         </main>

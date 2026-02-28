@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageName = "Photography";
+import { Image } from 'astro:assets'
+
 ---
 <BaseLayout pageTitle={pageName}>
 <h2>Nothing here but dogs for now</h2>
 <p>I havent finished this part of the website yet, so for now hope you can be content with this picture of a dog (I took it :D)</p>
-<img src="/src/images/TheDog.jpeg" alt="A dog." width="50%"/>
+<Image src={import("/src/images/TheDog.jpeg")} alt="A dog." width="200"/>
 </BaseLayout>

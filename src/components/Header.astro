@@ -1,12 +1,21 @@
 ---
-// src/components/Header.astro
 const { title } = Astro.props;
+const pathname = Astro.url.pathname;
+
+const pathSegments = pathname.split('/').filter(Boolean);
+
+const sectionName = pathSegments[0]; 
+
+const displaySection = sectionName ? sectionName.charAt(0).toUpperCase() + sectionName.slice(1) : "";
+const sectionHref = `/${sectionName}/`;
 ---
 <header>
     <div class="Box">
         <h4>
             <a href="/">Home/</a>
-            <a href="/posts/">Posts/</a>
+            {sectionName && (
+                <a href={sectionHref}>{displaySection}/</a>
+            )}
             {title && <span>{title}.md</span>}
         </h4>
     </div>
