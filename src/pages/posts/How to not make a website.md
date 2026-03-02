@@ -3,7 +3,7 @@ layout: ../../layouts/BaseMarkdown.astro
 title: How to Not make a website
 author: Lu
 description: A funny way of how I made my website
-pubDate: 2026-03-02
+pubDate: 2026-03-02T10:00:00
 tags:
 - website
 - not-a-tutorial
@@ -34,7 +34,7 @@ I started to go after other website to read and get inspirations, and along the 
 
 Some of the websites I ended up using as inspiration and guides when creating my stuff was:
 
-- [QueerComputerClub](https://queercomputerclub.ca/)
+- [Queer Computer Club](https://queercomputerclub.ca/)
 
 - [Skip](https://skip.house/)
 
@@ -52,11 +52,11 @@ I should start of by saying I am an indecisive person...
 
 Because of it I have a lot of sketches for the basic pages:
 
-![20260301_230617.jpg](/src/pages/posts/post_1_photos/img_1.jpg)
+![img_1.jpg](./post_1_photos/img_1.jpg)
 
-![20260301_230628.jpg](/src/pages/posts/post_1_photos/img_2.jpg)
+![img_2.jpg](./post_1_photos/img_2.jpg)
 
-![20260301_230647.jpg](/src/pages/posts/post_1_photos/img_3.jpg)
+![img_3.jpg](./post_1_photos/img_3.jpg)
 
 This website went through 3 revisions and used several different layouts and I think in the end I am happy with the approaches I took it :D
 
