@@ -62,7 +62,7 @@ This website went through 3 revisions and used several different layouts and I t
 
 Most of my design was done on paper and then later I was able to bring it into reality by using a framework called [Astro](https://astro.build/). I know it's a bit of a bazooka for a simple blog project, but I felt it would be nice to learn it and its intricacies so I can use it for more complex projects in the future. It offers a bunch of cool functions that really made my life doing this website much easier.
 
-## Part IV: The Conclusion.
+## Act IV: The Conclusion.
 
 I am excited to finally start blogging on my website! I am really happy how it turned out, and I feel it represents me :D
 
