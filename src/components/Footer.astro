@@ -1,9 +1,19 @@
 ---
-
+import { Image } from 'astro:assets'
 ---
+<style>
+    .inline-heading {
+    display: inline-block;
+}
+</style>
 <footer>
     <div>
-        <h2>Please believe me, this a really cool Footer</h2>
-        <p> All rights reserved to <i>Redated</i> "Lu" © 2026</p>
+        <div class="inline-heading">
+            <Image alt="my logo for now" src="/favicon.svg" width="200" height="100">
+        </div>
+        <div class="inline-heading">
+            <h2>Please believe me, this a really cool Footer</h2>
+            <p> All rights reserved to <i>Redated</i> "Lu" © 2026</p>
+        </div>
     </div>
 </footer>   
