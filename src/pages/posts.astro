@@ -1,9 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
-const allPosts = Object.values(
-  import.meta.glob("./posts/*.md", { eager: true }),
-);
+
+const allPosts = await Astro.glob('../pages/posts/*.md');
+
+const sortedPosts = allPosts.sort((a, b) => {
+  return new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime();
+});
+
 const pageName = "Posts";
 ---
 
@@ -48,12 +52,13 @@ const pageName = "Posts";
     </a>
   </div>
   {
-    allPosts.map((post: any) => (
-      <BlogPost
-        url={post.url}
-        title={post.frontmatter.title}
-        pubDate={post.frontmatter.pubDate}
-      />
-    ))
+    sortedPosts.map((post: any) => (
+    <BlogPost
+      url={post.url}
+      title={post.frontmatter.title}
+      pubDate={post.frontmatter.pubDate}
+      description={post.frontmatter.description}
+    />
+  ))
   }
 </BaseLayout>

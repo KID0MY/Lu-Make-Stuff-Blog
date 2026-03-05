@@ -4,11 +4,14 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 const { frontmatter } = Astro.props;
 
-const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-});
+const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString(
+    "en-US",
+    {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    },
+);
 ---
 
 <html lang="en">
@@ -18,12 +21,13 @@ const formattedDate = new Date(frontmatter.pubDate).toLocaleDateString('en-US', 
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>{frontmatter.title}</title>
-    </head> <body>
+    </head>
+    <body>
         <main>
             <Header title={frontmatter.title} />
             <div class="Box-MD">
                 <h1>{frontmatter.title}</h1>
-                <h4>Published on: {formattedDate}</h4> 
+                <h4>Published on: {formattedDate}</h4>
                 <slot />
             </div>
         </main>

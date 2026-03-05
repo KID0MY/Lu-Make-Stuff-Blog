@@ -103,6 +103,11 @@ a:not([class]) i {
     display: inline-block;
 }
 
+a:not([class]) p {
+    color: var(--primary-color);
+    background-color: var(--primary-bg-color);
+}
+
 .badges{
 text-decoration: none;
 image-rendering: pixelated;
