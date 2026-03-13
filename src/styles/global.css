@@ -131,6 +131,16 @@ footer {
     padding: 24px 8px;
 }
 
+blockquote{
+    margin: 0;
+    border-color: var(--highlight-color);
+    border-width: 0px 0px 0px 3px;
+    padding-left: 20px;
+    padding: 10px 0px 10px 20px;
+    border-style: dotted;
+    /*background: linear-gradient(90deg, #d42a6354 0%, transparent 100%);*/
+}
+
 .Box {
     margin-top: 5px;
     margin-bottom: 5px;
