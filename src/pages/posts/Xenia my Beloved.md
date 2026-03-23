@@ -23,7 +23,7 @@ Xenia was a mascot concept for linux back in 1996 created by Alan Mackey. She wa
 
 One curious thing of Xenia is that she was originally a male character but after a re-design made by [cathodegaytube](https://www.tumblr.com/cath0degaytube/), and a supportive email by Alan Mackey himself, She transition to female and got the name of Xenia! Making her a small trans icon on the linux community.
 
-![|](./post_Xenia/cathodegaytube1.jpg)
+![](./post_Xenia/cathodegaytube1.jpg)
 
 *One cool fact I learned is that some of Alan's friends that used linux ended up transitioning so it made sense to him for Xenia to become a girl*
 
