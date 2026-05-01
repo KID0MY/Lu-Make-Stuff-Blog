@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageName = "What time eh?";
+---
+    
+<BaseLayout pageTitle={pageName}>
+    <div style="display: grid; place-items: center;">
+        <h2 id="clock-time"></h2>
+        <h3 id="clock-date"></h3>
+    </div>
+</BaseLayout>
+ 
+<script src="../scripts/clock.js"></script>
+ 

@@ -1,9 +1,10 @@
 ---
-layout: ../../layouts/BaseMarkdown.astro
+layout: ../../../../layouts/BaseMarkdown.astro
 title: Designing QCC Custom Fob Covers
 author: Lu
 description: How I designed a custom fob cover for my QCC key
 pubDate: 2026-03-16
+category: rambles
 tags:
 - QCC
 - Fob
@@ -27,7 +28,7 @@ That’s when my silly brain started prototyping.
 
 Before doing anything I needed to get a rough estimate of the fob in Blender, so I just took a picture and started modeling it, I didn't grab measurements at the time and that came to **bite me later** on the process.
 
-![|500](./post_qcc_fob/Fob_Before.jpg)
+![|500](./Fob_Before.jpg)
 
 After that I started to design the case for it. I wanted something sleek and that wouldnt make the tag clunky while also being stylized. In the end my idea was simple, use a hexagon! Because the hexagon is the bestagon!
 
@@ -35,7 +36,7 @@ After that I started to design the case for it. I wanted something sleek and tha
 
 After getting the roughshape of it done I decided to go and stylelize it. I wanted it to be unique but also easy to print, so no complex design on the face. In the end there wasnt a lot of back and forth on the idea, I simply made so that the bottom has a circle area where i stuck the QCC logo on.
 
-![](./post_qcc_fob/3D_print.png)
+![](./3D_print.png)
 
 When it come to printing I did so that the design is split in 3 parts in one `.stl`, and it worked pretty well! I have heard that you can use a `.obj` for a better control of multi-color prints, but I havent really done any research on it so can't confirm how well it works.
 
@@ -45,13 +46,13 @@ So it was time to print, and well, let's just say my "visual estimate" was a bit
 
 Remember how I didn't measure? After failing beautifully on the first attempt, I finally did the responsible thing: I grabbed the calipers and looked for an existing reference model online. Even then, it took a lot of attempts to find the sweet spot. 
 
-![](./post_qcc_fob/Failed_prints.jpg)
+![](./Failed_prints.jpg)
 
 > **Fun fact:** different filaments (and even colors!) can shrink or expand differently. I eventually found the perfect fit using **Black and White PETG From Elegoo**.
 
 I choose PETG because its a more durable than PLA  and about the same price, so it felt like the good choice.
 
-![](./post_qcc_fob/PrintedFob.jpg)
+![](./PrintedFob.jpg)
 
 ## Part 4: Print like crazy
 
