@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
-
+import "../styles/postPage.css";
 const postFiles = import.meta.glob('../pages/posts/**/*.md', { eager: true });
 
 const allPosts = Object.values(postFiles) as any[];
@@ -11,11 +11,12 @@ const sortedPosts = allPosts.sort((a, b) => {
 });
 
 const categories = {
-  weekly:    { label: "weekly",    posts: [] as any[] },
-  rambles:   { label: "rambles",   posts: [] as any[] },
-  tutorials: { label: "tutorials", posts: [] as any[] },
-  stories:   { label: "stories",   posts: [] as any[] },
+  weekly:    { label: "weekly",    sigil: ":3", desc: "short posts, misc thoughts", posts: [] as any[] },
+  rambles:   { label: "rambles",   sigil: ":p", desc: "rambles and opinions",       posts: [] as any[] },
+  tutorials: { label: "tutorials", sigil: "o-o", desc: "guides & how-tos",          posts: [] as any[] },
+  stories:   { label: "stories",   sigil: "|->", desc: "fiction, chapters",         posts: [] as any[] },
 };
+
 
 for (const post of sortedPosts) {
   const cat = post.frontmatter.category ?? 'rambles';
@@ -23,25 +24,11 @@ for (const post of sortedPosts) {
   (categories[key] ?? categories.rambles).posts.push(post);
 }
 
+// default open tab = first category that has posts, else 'indepth'
+const defaultTab = (Object.entries(categories).find(([, v]) => v.posts.length > 0)?.[0]) ?? 'rambles';
+
 const pageName = "Posts";
 ---
-
-<style>
-.rss {
-  text-decoration: none;
-  padding: 2px 2px;
-  background-color: #ff8012;
-  color: var(--primary-bg-color);
-  transition: all 0.4s ease;
-}
-.rss:hover {
-  background-color: #A34C00;
-  color: var(--primary-color);
-}
-svg.rss { fill: var(--primary-bg-color); }
-svg.rss:hover { fill: var(--primary-color); }
-</style>
-
 <BaseLayout pageTitle={pageName}>
   <div style="padding-top: 20px;">
     <a href="/rss.xml" class="rss">RSS <svg height="10px" width="10px" viewBox="-271 273 256 256" xml:space="preserve">
@@ -53,12 +40,47 @@ svg.rss:hover { fill: var(--primary-color); }
     </svg></a>
   </div>
 
-  {sortedPosts.map((post: any) => (
-    <BlogPost
-      url={post.url}
-      title={post.frontmatter.title}
-      pubDate={post.frontmatter.pubDate}
-      description={post.frontmatter.description}
-    />
-  ))}
+  <!-- Tab buttons -->
+  <div class="tab-bar" role="tablist">
+    {Object.entries(categories).map(([key, cat]) => (
+      <button
+        class={`tab-btn ${key === defaultTab ? 'active' : ''}`}
+        role="tab"
+        data-tab={key}
+        aria-controls={`panel-${key}`}
+      >
+        <span class="tab-sigil">{cat.sigil}</span>
+        <span class="tab-name">{cat.label}</span>
+        <span class={`tab-count ${cat.posts.length === 0 ? 'empty' : ''}`}>
+          [{cat.posts.length}]
+        </span>
+      </button>
+    ))}
+  </div>
+
+  <!-- Tab panels -->
+  <div class="tab-panels">
+    {Object.entries(categories).map(([key, cat]) => (
+      <div
+        class={`tab-panel ${key === defaultTab ? 'active' : ''}`}
+        id={`panel-${key}`}
+        role="tabpanel"
+      >
+        <div class="panel-desc">{cat.desc}</div>
+        {cat.posts.length === 0
+          ? <span class="panel-empty">nothing yet...</span>
+          : cat.posts.map((post: any) => (
+              <BlogPost
+                url={post.url}
+                title={post.frontmatter.title}
+                pubDate={post.frontmatter.pubDate}
+                description={post.frontmatter.description}
+              />
+            ))
+        }
+      </div>
+    ))}
+  </div>
 </BaseLayout>
+
+<script src="../scripts/tabs.js"></script>

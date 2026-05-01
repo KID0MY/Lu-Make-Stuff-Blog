@@ -125,6 +125,11 @@ h1 {
     line-height: 1;
 }
 
+strong, b {
+    font-family: 'JetBrains-Bold', monospace;
+    color: #eeee;
+}
+
 footer {
     color: var(--primary-color);
     background: linear-gradient(#00000000,var(--secondary-bg-color));
