@@ -1,5 +1,5 @@
 ---
-layout: ../../../../layouts/BaseMarkdown.astro
+layout: ../../../layouts/BaseMarkdown.astro
 title: Xenia my Beloved
 author: Lu
 description: Xenia my beloved, the Linux mascot that found a place in my heart
@@ -18,13 +18,13 @@ So, before entering the rabbit hole that this might become let me first introduc
 
 Xenia was a mascot concept for linux back in 1996 created by Alan Mackey. She was supposed to be an alternative to the good old Tux.  
 
-![](./linuxfox.gif)
+![](./xenia-my-beloved/linuxfox.gif)
 
 (design by Alan)
 
 One curious thing of Xenia is that she was originally a male character but after a re-design made by [cathodegaytube](https://www.tumblr.com/cath0degaytube/), and a supportive email by Alan Mackey himself, She transition to female and got the name of Xenia! Making her a small trans icon on the linux community.
 
-![](./cathodegaytube1.jpg)
+![](./xenia-my-beloved/cathodegaytube1.jpg)
 
 *One cool fact I learned is that some of Alan's friends that used linux ended up transitioning so it made sense to him for Xenia to become a girl*
 
@@ -46,15 +46,15 @@ Because of all of these reasons,and more, Xenia became my pfp on several places 
 
 She is easily on my top 5 confort characters. While there is no story or adventure Xenia participates for me to follow, I always love to see where the community of artist would put her or do with her, I specially love the memes:
 
-![](./Xenia_haha_pants.jpeg)
+![](./xenia-my-beloved/Xenia_haha_pants.jpeg)
 
 Art by: [Reality Trends](https://vt.social/@realty_trends/111832464054450194)
 
-![](./averagePulseAudioUser.png)
+![](./xenia-my-beloved/averagePulseAudioUser.png)
 
 Art by: [Koko](https://yiff.life/@koko/111618932283595363)
 
-![](./hack.png)
+![](./xenia-my-beloved/hack.png)
 
 Art by: [kadabliuh 2009](https://www.furaffinity.net/view/46685395/)
 
