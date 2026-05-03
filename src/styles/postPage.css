@@ -48,14 +48,14 @@ svg.rss:hover { fill: var(--primary-color); }
       color: var(--primary-color);
       font-family: 'JetBrains', monospace;
       font-size: 0.82rem;
-      opacity: 0.4;
+      opacity: 0.6;
       white-space: nowrap;
       transition: opacity 0.15s, border-color 0.2s;
       margin-bottom: -1px;
   }
 
   .tab-btn:hover {
-      opacity: 0.75;
+      opacity: 0.8;
   }
 
   .tab-btn.active {
